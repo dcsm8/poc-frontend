@@ -4,9 +4,9 @@ import { useParams, useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 
 const pageComponents = {
-  page1: () => <div>This is Page 1</div>,
-  page2: () => <div>This is Page 2</div>,
-  page3: () => <div>This is Page 3</div>,
+  page1: () => <div>This is Page 1 (Client-Side)</div>,
+  page2: () => <div>This is Page 2 (Client-Side)</div>,
+  page3: () => <div>This is Page 3 (Client-Side)</div>,
 };
 
 type PageKey = keyof typeof pageComponents;
