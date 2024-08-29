@@ -1,14 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth/next";
 import axios from "axios";
-// import { authOptions } from "../auth/[...nextauth]/route";
+import { getAuthOptions } from "../auth/[...nextauth]/route";
 
 const backendUrl = "http://localhost:3001";
 
 export async function GET(req: NextRequest) {
   try {
-    // const session = await getServerSession(authOptions);
-    const session = await getServerSession();
+    const session = await getServerSession(getAuthOptions());
 
     console.log(session);
 
