@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <h1>Welcome to My App</h1>
+      <h1>Next.js 14 app router</h1>
       <h2>Choose a flow to test:</h2>
       <h3>Client-Side Flows:</h3>
       <div>
